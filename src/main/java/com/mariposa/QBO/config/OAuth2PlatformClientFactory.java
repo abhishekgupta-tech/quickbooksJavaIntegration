@@ -56,23 +56,9 @@ public class OAuth2PlatformClientFactory {
 	private org.springframework.core.env.Environment env;
 	private OAuth2PlatformClient client;
 	private OAuth2Config oauth2Config;
-	private String accessToken = "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0."
-			+ ".XL8ft9x2il7-kT-B49T9kg.ETOQuSdboXgqP7WL9Tpi0TALqVGtQK2ghQzkxMPFmpT"
-			+ "ZUheDHsPg1ikS9wQa_aLexI99b3DPE9VVzD1904sbVSGTQ1mZckQu-g36Mqes11Wwh3"
-			+ "HJMlS20EGgy9RC34UvyMxWyv7RLIoZThVe3oSHz3mjIs75A21yvo7iQY21xoc2rtbdi"
-			+ "YzxRycO8031VORJPhhvuC2RhptGs5vZDUmDKwDIKzY4-AclgIbkIIRhN8ckts-JTKL7"
-			+ "P832XWdZmW0t1tZG_h53GJh1RlsJ3q5giHVIdVXZ6zs4laVJMFowjjVztJgTgs8JXjf"
-			+ "ZonfVSKQEAlwkucgHS2zhrE9MLe0_YNSP_CFDXbmQeB0zNrCjmZPu_FK0bpMGJKEhoI"
-			+ "qG3onMdEAUnWAQu-Tp-Lqxr4fq9eFjqmxOpB6FDuKwVyzxa4G9rITiPr8Nz09GsghZz"
-			+ "C-3dki0YykSKrOwfOtR0WhQon5J4te70AuhEQlAppNa-WvRibajn2SwsDXlKtvd64D5"
-			+ "Y0gJ-fZVPRFkg6Ls8LgfGeIPGn4dK5LwEa9yuNtVZmxBl3dr77dO5fGWdlgwguVFFi7"
-			+ "H5ByFxOLiKtZGa8Q9DB2WttI5HEymbhFG4uU1_f5mW2bOEe7wSI1-wrYE5ESlOjm8-3"
-			+ "FjFaBCiETic6WSz7PyEDneiKcc9xJoYt_A87CZ6aR1uFqPEEauh46t5Lgr9TyzmlrJ5"
-			+ "_nqZZ-4wX7VOdRDQcbuL2Hx4cAP_A9yqZE7REg7T0VCWQzvLneLIIEFyclJKMvTaHl9"
-			+ "_akxyqJCVIpcpRu08vCrmN7bq6iTPlJop67maI5l4mlNMjoQjSNMEr1wdWy52yqo-k1"
-			+ "l2HhJn5rnjaiTFLF1MOwfPMkPZPVnow2v8OC3Dp4uqB5zxrGk._P2npto7yyUaqoMYP" + "QIZ1A";
-	private String refreshToken = "AB11682701153Df5m6jKmBk4zPCP163kvl2UwWzGPfSwAad5SN";
-	private String realmId = "4620816365249144170";
+	private String accessToken = null;
+	private String refreshToken = null;
+	private String realmId = null;
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
 	public ResponseEntity<Object> updateQuickbooksEssentials(String jsonString) {
